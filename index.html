@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Gmail Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>📩 AI Email Agent</h1>
+            <p>Reasoning-based Agentic Workflow</p>
+        </header>
+
+        <div id="chat-container" class="chat-container">
+            <div class="message assistant">
+                Hello! I am your AI Agent. I can fetch, filter, summarize, and draft replies for your emails. How can I help you today?
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="e.g., Find interview emails..." />
+            <button id="send-btn">Send</button>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <span>Agent is thinking...</span>
+        </div>
+    </div>
+
+    <script src="emails.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
